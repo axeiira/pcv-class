@@ -1,0 +1,13 @@
+PCV - Tue 3 Sep
+BGR
+(y,x,3)
+
+unsigned int 8 bit = intensitas
+
+PCV - Tue 10 Sep
+    Histogram -> Distribusi intensitas piksel
+    Tugas :
+        Program ulang kontrast citra berwarna
+
+
+
