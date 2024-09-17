@@ -1,13 +1,17 @@
 PCV - Tue 3 Sep
-BGR
-(y,x,3)
-
-unsigned int 8 bit = intensitas
+    BGR (y,x,3)
+    unsigned int 8 bit = intensitas
 
 PCV - Tue 10 Sep
     Histogram -> Distribusi intensitas piksel
     Tugas :
         Program ulang kontrast citra berwarna
 
-
+PCV - Tue 17 Sep
+    Tugas :
+        1. Lowpass Filter
+        2. Deteksi Tepi -> Sumbu X, Sumbu y
+        3. Highpass Filter
+        4. Sharpen
+        ---- Terapkan di kamera (Berwarna & Hitam Putih) ---
 

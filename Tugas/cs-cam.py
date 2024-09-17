@@ -14,7 +14,8 @@ def Transform(r, r1, s1, r2, s2):
    s = np.uint8(np.floor(s))
    return s
 
-r1,s1,r2,s2 = 80,20,175,240
+#Parameter
+r1,s1,r2,s2 = 80,255,120,0
 
 cam = cv.VideoCapture(0)
 
@@ -28,19 +29,19 @@ while True:
       break
 
    frameGray = cv.cvtColor(frame,cv.COLOR_BGR2GRAY)
-   frameGray = cv.resize(frameGray, (500,250))
-   b = frameGray.shape[0]
-   k = frameGray.shape[1]
-   cs = np.zeros((b,k),np.uint8)
+   frameGray = cv.resize(frameGray, (620,320))
+   x = frameGray.shape[0]
+   y = frameGray.shape[1]
+   cs = np.zeros((x,y),np.uint8)
 
-   for i in range(b):
-       for j in range(k):
+   for i in range(x):
+       for j in range(y):
            r = frameGray[i,j]
            cs[i,j] = Transform(r, r1, s1, r2, s2)
 
    cv.imshow('original', frameGray)
    cv.imshow('contrast streched', cs)
-   if cv.waitKey(0) == ord('q'):
+   if cv.waitKey(30) == ord('q'):
       break
    
 cam.release()
