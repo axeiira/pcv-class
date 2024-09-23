@@ -8,7 +8,7 @@ PCV - Tue 10 Sep
         Program ulang kontrast citra berwarna
 
 PCV - Tue 17 Sep
-    Tugas :
+    Tugas 2 :
         1. Lowpass Filter
         2. Deteksi Tepi -> Sumbu X, Sumbu y
         3. Highpass Filter
