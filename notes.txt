@@ -15,3 +15,11 @@ PCV - Tue 17 Sep
         4. Sharpen
         ---- Terapkan di kamera (Berwarna & Hitam Putih) ---
 
+PCV - Tue 24 Sep
+    Tugas 3 :
+        Lowpass
+        Highpass
+        Bandreject
+        Bandpass
+        Green Screen
+
