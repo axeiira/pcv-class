@@ -15,14 +15,18 @@ while True:
         print("error in retrieving frame")
         break
     
-    yellow = segment_color(image,np.array([30-15,100,100]),np.array([30+15,255,255]))
-    
     lower_red = segment_color(image,np.array([0-15,100,100]),np.array([0+15,255,255]))
     upper_red = segment_color(image,np.array([(345/2)-15,100,100]),np.array([(345/2)+15,255,255]))
     red = lower_red + upper_red
     
+    blue = segment_color(image,np.array([120-30,100,0]),np.array([120+30,255,255]))
     
+    white = segment_color(image,np.array([0,0,200]),np.array([180,50,255]))
     
+    yellow = segment_color(image,np.array([30-15,100,100]),np.array([30+15,255,255]))
+    
+    card = red + white + yellow + blue
+    cv.imshow("Red", card)
     if cv.waitKey(30) == ord('q'):
       break
   
